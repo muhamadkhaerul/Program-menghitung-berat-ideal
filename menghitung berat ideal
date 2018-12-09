@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   char kelamin;
+    cout << "                --Menghitung Berat Badan Ideal--" << endl <<endl << endl;
+    cout << "Pilih Jenis Kelamin(L) untuk Laki-laki (P) untuk Perempuan: ";
+    cin >> kelamin ;
+    if (kelamin == 'L')
+        { cout << "Laki-laki" << endl<< endl;}
+    else if ( kelamin=='P')
+        { cout << "Perempuan" << endl << endl;}
+    int Tinggi;
+    cout << "Masukan Tinggi Badan (cm)" << endl;
+    cin >> Tinggi;
+    int Berat;
+    cout << "Masukan Berat Badan (kg)" << endl;
+    cin >> Berat;
+   int hasil;
+    if (kelamin=='L')
+        {hasil=(Tinggi-100)-((Tinggi-100)*10/100);}
+    else if (kelamin=='P');
+    {hasil=(Tinggi-100)-((Tinggi-100)*15/100);}
+    cout << "Berat Badan Ideal anda adalah: " << hasil << endl;
+    cin.get();
+    return 0;
+}
